@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the outer border */
+        .outer-border {
+            border: 5px solid #007bff; /* Thick border around the form */
+            padding: 10px;
+        }
+
+        /* Style for the form container */
+        .form-container {
+            border: 1px solid #ccc; /* Thin border around the form elements */
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Style for the form fields */
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .form-checkbox {
+            margin-left: 5px;
+        }
+
+        .form-submit {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <div class="outer-border">
+        <div class="form-container">
+            <form>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name"><br><br>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label class="form-label">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+
+                <label class="form-label">Languages Known:</label>
+                <input type="checkbox" id="english" name="languages" value="english">
+                <label class="form-checkbox" for="english">English</label>
+                <input type="checkbox" id="kannada" name="languages" value="kannada">
+                <label class="form-checkbox" for="kannada">Kannada</label>
+                <input type="checkbox" id="hindi" name="languages" value="hindi">
+                <label class="form-checkbox" for="hindi">Hindi</label>
+                <input type="checkbox" id="telugu" name="languages" value="telugu">
+                <label class="form-checkbox" for="telugu">Telugu</label>
+
+                <input class="form-checkbox" type="checkbox" id="declaration" name="declaration" required>
+                <label class="form-label" for="declaration">Hereby I declare all the given details are true</label>
+
+                <input class="form-submit" type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+
+    <a href="https://ethnus.com/">Login in to Ethnus website</a>
+</body>
+</html>
